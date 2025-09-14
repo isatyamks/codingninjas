@@ -74,9 +74,6 @@ Backend (FastAPI, Python)
 3. Each answer is evaluated and logged.
 4. At the end, a detailed feedback report is generated and stored.
 
-## Contributing
-
-Pull requests are welcome! Please add docstrings and comments to all new code.
 
 ## License
 
