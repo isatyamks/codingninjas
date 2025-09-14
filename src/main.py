@@ -1,10 +1,10 @@
 import streamlit as st
-from app.interview.state import new_session
-from app.interview.flow import load_questions
-from app.evaluation.scoring import evaluate_answer
-from app.reporting.report_gen import generate_simple_pdf, save_transcript_json
-from app.utils.db import init_db, save_session
-from app.config import OPENAI_API_KEY
+from src.interview.state import new_session
+from src.interview._flow import load_questions
+from src.evaluation.scoring import evaluate_answer
+from src.reporting.report_gen import generate_simple_pdf, save_transcript_json
+from src.utils.db import init_db, save_session
+from src.config import OPENAI_API_KEY
 import os
 
 # initialize
@@ -106,7 +106,7 @@ else:
             # otherwise use simple template
             if OPENAI_API_KEY:
                 try:
-                    from app.evaluation.semantic_eval import call_llm_evaluator
+                    from src.evaluation.semantic_eval import call_llm_evaluator
                     # prepare quick prompt to ask for summary
                     summary_text = "Session summary:\n"
                     for i, qa in enumerate(session["qa"], 1):
