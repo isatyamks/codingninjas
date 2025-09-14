@@ -31,4 +31,4 @@ import sqlite3
 import os
 import json
 
-DB_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "..", "data", "poc_store.db")
+from src.config.settings import DB_PATH

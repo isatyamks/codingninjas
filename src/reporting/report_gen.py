@@ -1,4 +1,9 @@
 
+from src.config.settings import TRANSCRIPTS_DIR
+import os
+import json
+from fpdf import FPDF
+from datetime import datetime
 def save_transcript_json(session: dict):
     path = os.path.join(TRANSCRIPTS_DIR, f"{session['session_id']}.json")
     with open(path, "w", encoding="utf-8") as f:

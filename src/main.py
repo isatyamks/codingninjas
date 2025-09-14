@@ -4,7 +4,7 @@ from src.interview._flow import load_questions
 from src.evaluation.scoring import evaluate_answer
 from src.reporting.report_gen import generate_simple_pdf, save_transcript_json
 from src.utils.db import init_db, save_session
-from src.config import OPENAI_API_KEY
+from src.config.settings import OPENAI_API_KEY
 import os
 
 # initialize
