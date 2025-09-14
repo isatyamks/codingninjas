@@ -1,37 +1,37 @@
 
+
 # questions.py
 # -----------------------------
-# This module contains the question bank for the Excel Mock Interviewer.
-# Each question is a dictionary with metadata, the question text, and the ideal answer.
-# Extend this list to add more questions or support more difficulty levels.
+# Loads the advanced question bank from questions_db.json and provides query utilities.
 
-QUESTIONS = [
-    {
-        "id": "q1",
-        "difficulty": "entry",
-        "title": "Absolute vs Relative Reference",
-        "question": "What is an absolute cell reference in Excel, and when would you use it? Give an example.",
-        "ideal": "An absolute reference uses $ to lock a row/column (e.g. $A$1). Use when copying formulas but you need a fixed reference (e.g. fixed tax rate cell). Example: =A2*$B$1 where $B$1 is tax rate."
-    },
-    {
-        "id": "q2",
-        "difficulty": "entry",
-        "title": "Find Duplicates",
-        "question": "How can you identify duplicate values in a single column? Provide at least two methods (GUI or formula).",
-        "ideal": "Methods: Conditional Formatting -> Highlight Duplicates, or formula: =COUNTIF(A:A, A2) > 1 which returns TRUE if duplicate. Also Remove Duplicates or PivotTable counts."
-    },
-    {
-        "id": "q3",
-        "difficulty": "entry",
-        "title": "VLOOKUP basics",
-        "question": "How does VLOOKUP work and what's a common pitfall? Give a small example formula.",
-        "ideal": "VLOOKUP(value, table_range, col_index, [range_lookup]). Pitfall: if range_lookup omitted or TRUE it expects sorted table; use FALSE for exact match. Example: =VLOOKUP(B2, $F$2:$G$100, 2, FALSE)."
-    },
-    {
-        "id": "q4",
-        "difficulty": "mid",
-        "title": "PivotTable Summarize",
-        "question": "You have transaction-level sales data (Date, Region, Product, Amount). How would you quickly produce total sales by Region and Month? Describe steps.",
-        "ideal": "Create PivotTable: Rows -> Region; Columns -> Month (or Group by Month on Date); Values -> Sum of Amount. Alternatively use SUMIFS with helper columns."
-    }
-]
+import json
+import os
+
+DB_PATH = os.path.join(os.path.dirname(__file__), '../../data/questions_db.json')
+
+def load_questions_db():
+    with open(DB_PATH, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+QUESTIONS = load_questions_db()
+
+def get_questions_by_difficulty(difficulty):
+    return [q for q in QUESTIONS if q.get('difficulty') == difficulty]
+
+def get_questions_by_skill(skill):
+    return [q for q in QUESTIONS if skill in q.get('skills', [])]
+
+def get_questions_by_tag(tag):
+    return [q for q in QUESTIONS if tag in q.get('tags', [])]
+
+def get_question_by_id(qid):
+    for q in QUESTIONS:
+        if q.get('id') == qid:
+            return q
+    return None
+
+def get_follow_up_questions(qid):
+    q = get_question_by_id(qid)
+    if q:
+        return [get_question_by_id(fid) for fid in q.get('follow_ups', [])]
+    return []
