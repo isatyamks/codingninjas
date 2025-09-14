@@ -1,0 +1,39 @@
+{
+  "candidate_name": "Candidate_007",
+  "session_id": "session_007",
+  "level": "mid",
+  "started_at": "2025-09-14T15:00:00Z",
+  "qa": [
+    {
+      "question": "How would you use Excel to forecast sales for the next quarter?",
+      "answer": "I would use historical data, apply moving averages, and use the FORECAST function. I’d visualize with line charts and add scenario analysis.",
+      "eval": {
+        "score_accuracy": 9,
+        "score_efficiency": 8,
+        "score_clarity": 9,
+        "score_creativity": 8,
+        "feedback": "Good use of forecasting tools. Could mention regression analysis for more accuracy.",
+        "suggestions": ["Learn regression analysis in Excel."],
+        "follow_ups": []
+      }
+    }
+  ],
+  "scores": {"accuracy": 9, "efficiency": 8, "clarity": 9, "creativity": 8},
+  "transcript": [
+    {
+      "question": "How would you use Excel to forecast sales for the next quarter?",
+      "answer": "I would use historical data, apply moving averages, and use the FORECAST function. I’d visualize with line charts and add scenario analysis.",
+      "eval": {
+        "score_accuracy": 9,
+        "score_efficiency": 8,
+        "score_clarity": 9,
+        "score_creativity": 8,
+        "feedback": "Good use of forecasting tools. Could mention regression analysis for more accuracy.",
+        "suggestions": ["Learn regression analysis in Excel."],
+        "follow_ups": []
+      },
+      "timestamp": "2025-09-14T15:01:00Z"
+    }
+  ],
+  "agent_judgement": {"confidence": 0.90, "communication": "Clear and analytical.", "adaptability": "N/A"}
+}

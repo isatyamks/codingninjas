@@ -1,0 +1,39 @@
+{
+  "candidate_name": "Candidate_002",
+  "session_id": "session_002",
+  "level": "entry",
+  "started_at": "2025-09-14T09:30:00Z",
+  "qa": [
+    {
+      "question": "How would you clean a dataset with inconsistent date formats in Excel?",
+      "answer": "I would use Text to Columns or DATEVALUE to standardize dates, and check for errors with Conditional Formatting.",
+      "eval": {
+        "score_accuracy": 9,
+        "score_efficiency": 8,
+        "score_clarity": 8,
+        "score_creativity": 6,
+        "feedback": "Solid approach. Could mention Power Query for advanced cleaning.",
+        "suggestions": ["Learn Power Query for complex data tasks."],
+        "follow_ups": []
+      }
+    }
+  ],
+  "scores": {"accuracy": 9, "efficiency": 8, "clarity": 8, "creativity": 6},
+  "transcript": [
+    {
+      "question": "How would you clean a dataset with inconsistent date formats in Excel?",
+      "answer": "I would use Text to Columns or DATEVALUE to standardize dates, and check for errors with Conditional Formatting.",
+      "eval": {
+        "score_accuracy": 9,
+        "score_efficiency": 8,
+        "score_clarity": 8,
+        "score_creativity": 6,
+        "feedback": "Solid approach. Could mention Power Query for advanced cleaning.",
+        "suggestions": ["Learn Power Query for complex data tasks."],
+        "follow_ups": []
+      },
+      "timestamp": "2025-09-14T09:31:00Z"
+    }
+  ],
+  "agent_judgement": {"confidence": 0.88, "communication": "Efficient and practical.", "adaptability": "N/A"}
+}

@@ -1,0 +1,39 @@
+{
+  "candidate_name": "Candidate_009",
+  "session_id": "session_009",
+  "level": "mid",
+  "started_at": "2025-09-14T16:00:00Z",
+  "qa": [
+    {
+      "question": "How would you use Excel to create a dynamic dashboard for sales KPIs?",
+      "answer": "I’d use PivotTables, slicers, and charts. I’d add formulas for key metrics and use named ranges for flexibility.",
+      "eval": {
+        "score_accuracy": 10,
+        "score_efficiency": 9,
+        "score_clarity": 10,
+        "score_creativity": 9,
+        "feedback": "Excellent dashboard design. Could mention Power BI for more advanced features.",
+        "suggestions": ["Explore Power BI for advanced dashboards."],
+        "follow_ups": []
+      }
+    }
+  ],
+  "scores": {"accuracy": 10, "efficiency": 9, "clarity": 10, "creativity": 9},
+  "transcript": [
+    {
+      "question": "How would you use Excel to create a dynamic dashboard for sales KPIs?",
+      "answer": "I’d use PivotTables, slicers, and charts. I’d add formulas for key metrics and use named ranges for flexibility.",
+      "eval": {
+        "score_accuracy": 10,
+        "score_efficiency": 9,
+        "score_clarity": 10,
+        "score_creativity": 9,
+        "feedback": "Excellent dashboard design. Could mention Power BI for more advanced features.",
+        "suggestions": ["Explore Power BI for advanced dashboards."],
+        "follow_ups": []
+      },
+      "timestamp": "2025-09-14T16:01:00Z"
+    }
+  ],
+  "agent_judgement": {"confidence": 0.96, "communication": "Very strong dashboard skills.", "adaptability": "N/A"}
+}

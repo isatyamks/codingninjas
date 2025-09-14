@@ -1,0 +1,39 @@
+{
+  "candidate_name": "Candidate_005",
+  "session_id": "session_005",
+  "level": "mid",
+  "started_at": "2025-09-14T14:00:00Z",
+  "qa": [
+    {
+      "question": "How would you automate monthly reporting in Excel for a large dataset?",
+      "answer": "I would use Power Query to import and clean data, then create PivotTables and use macros to automate repetitive tasks.",
+      "eval": {
+        "score_accuracy": 9,
+        "score_efficiency": 10,
+        "score_clarity": 9,
+        "score_creativity": 8,
+        "feedback": "Great use of automation tools. Could mention scheduling with Power Automate.",
+        "suggestions": ["Explore Power Automate for scheduling reports."],
+        "follow_ups": []
+      }
+    }
+  ],
+  "scores": {"accuracy": 9, "efficiency": 10, "clarity": 9, "creativity": 8},
+  "transcript": [
+    {
+      "question": "How would you automate monthly reporting in Excel for a large dataset?",
+      "answer": "I would use Power Query to import and clean data, then create PivotTables and use macros to automate repetitive tasks.",
+      "eval": {
+        "score_accuracy": 9,
+        "score_efficiency": 10,
+        "score_clarity": 9,
+        "score_creativity": 8,
+        "feedback": "Great use of automation tools. Could mention scheduling with Power Automate.",
+        "suggestions": ["Explore Power Automate for scheduling reports."],
+        "follow_ups": []
+      },
+      "timestamp": "2025-09-14T14:01:00Z"
+    }
+  ],
+  "agent_judgement": {"confidence": 0.95, "communication": "Efficient and technical.", "adaptability": "N/A"}
+}

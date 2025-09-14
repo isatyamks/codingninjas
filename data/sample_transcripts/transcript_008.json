@@ -1,0 +1,39 @@
+{
+  "candidate_name": "Candidate_008",
+  "session_id": "session_008",
+  "level": "mid",
+  "started_at": "2025-09-14T15:30:00Z",
+  "qa": [
+    {
+      "question": "How would you use Excel to analyze customer churn?",
+      "answer": "I’d use formulas to calculate churn rate, PivotTables to segment by customer type, and charts to visualize trends. I’d also use conditional formatting to highlight high-risk customers.",
+      "eval": {
+        "score_accuracy": 8,
+        "score_efficiency": 8,
+        "score_clarity": 9,
+        "score_creativity": 7,
+        "feedback": "Solid approach. Could mention cohort analysis for deeper insights.",
+        "suggestions": ["Learn cohort analysis techniques."],
+        "follow_ups": []
+      }
+    }
+  ],
+  "scores": {"accuracy": 8, "efficiency": 8, "clarity": 9, "creativity": 7},
+  "transcript": [
+    {
+      "question": "How would you use Excel to analyze customer churn?",
+      "answer": "I’d use formulas to calculate churn rate, PivotTables to segment by customer type, and charts to visualize trends. I’d also use conditional formatting to highlight high-risk customers.",
+      "eval": {
+        "score_accuracy": 8,
+        "score_efficiency": 8,
+        "score_clarity": 9,
+        "score_creativity": 7,
+        "feedback": "Solid approach. Could mention cohort analysis for deeper insights.",
+        "suggestions": ["Learn cohort analysis techniques."],
+        "follow_ups": []
+      },
+      "timestamp": "2025-09-14T15:31:00Z"
+    }
+  ],
+  "agent_judgement": {"confidence": 0.89, "communication": "Good business understanding.", "adaptability": "N/A"}
+}

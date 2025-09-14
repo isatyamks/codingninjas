@@ -1,0 +1,76 @@
+{
+  "candidate_name": "Candidate_004",
+  "session_id": "session_004",
+  "level": "mid",
+  "started_at": "2025-09-14T13:00:00Z",
+  "qa": [
+    {
+      "question": "You receive a dataset with missing values, inconsistent date formats, and duplicate rows. Walk me through your approach to clean and prepare this data for analysis in Excel.",
+      "answer": "First, I would use Remove Duplicates to clean up rows. For missing values, I’d use filtering and maybe fill with averages if appropriate. For date formats, I’d use Text to Columns or DATEVALUE to standardize. I’d also use Conditional Formatting to highlight issues.",
+      "eval": {
+        "score_accuracy": 9,
+        "score_efficiency": 8,
+        "score_clarity": 10,
+        "score_creativity": 7,
+        "feedback": "Strong approach covering key steps. Could mention Power Query for advanced cleaning. Good explanation of date handling.",
+        "suggestions": ["Explore Power Query for more robust data cleaning.", "Practice using formulas for conditional replacements."],
+        "follow_ups": [
+          {
+            "agent": "Can you describe how you would handle outliers in the Amount column?",
+            "candidate": "I’d use Conditional Formatting to highlight outliers, then use formulas like Z-Score or IQR to identify them. I might filter them out or investigate further."
+          }
+        ]
+      }
+    },
+    {
+      "question": "Explain the difference between SUMIFS and PivotTables for aggregating data. When would you use each?",
+      "answer": "SUMIFS is great for quick calculations with criteria, especially in formulas. PivotTables are better for interactive analysis and summarizing large datasets. I’d use SUMIFS for simple reports, PivotTables for exploring data.",
+      "eval": {
+        "score_accuracy": 10,
+        "score_efficiency": 9,
+        "score_clarity": 10,
+        "score_creativity": 8,
+        "feedback": "Excellent comparison and context. Shows understanding of both tools.",
+        "suggestions": ["Practice using both in combination for advanced reporting."],
+        "follow_ups": []
+      }
+    }
+  ],
+  "scores": {
+    "accuracy": 19,
+    "efficiency": 17,
+    "clarity": 20,
+    "creativity": 15
+  },
+  "transcript": [
+    {
+      "question": "You receive a dataset with missing values, inconsistent date formats, and duplicate rows. Walk me through your approach to clean and prepare this data for analysis in Excel.",
+      "answer": "First, I would use Remove Duplicates to clean up rows. For missing values, I’d use filtering and maybe fill with averages if appropriate. For date formats, I’d use Text to Columns or DATEVALUE to standardize. I’d also use Conditional Formatting to highlight issues.",
+      "eval": {
+        "score_accuracy": 9,
+        "score_efficiency": 8,
+        "score_clarity": 10,
+        "score_creativity": 7,
+        "feedback": "Strong approach covering key steps. Could mention Power Query for advanced cleaning. Good explanation of date handling.",
+        "suggestions": ["Explore Power Query for more robust data cleaning.", "Practice using formulas for conditional replacements."],
+        "follow_ups": [
+          {
+            "agent": "Can you describe how you would handle outliers in the Amount column?",
+            "candidate": "I’d use Conditional Formatting to highlight outliers, then use formulas like Z-Score or IQR to identify them. I might filter them out or investigate further."
+          }
+        ]
+      },
+      "timestamp": "2025-09-14T13:01:00Z"
+    },
+    {
+      "agent": "Can you describe how you would handle outliers in the Amount column?",
+      "candidate": "I’d use Conditional Formatting to highlight outliers, then use formulas like Z-Score or IQR to identify them. I might filter them out or investigate further.",
+      "timestamp": "2025-09-14T13:02:00Z"
+    }
+  ],
+  "agent_judgement": {
+    "confidence": 0.92,
+    "communication": "Clear, concise, and logical explanations.",
+    "adaptability": "Asked clarifying questions and adjusted approach based on feedback."
+  }
+}

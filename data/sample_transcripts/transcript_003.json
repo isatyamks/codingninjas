@@ -1,0 +1,39 @@
+{
+  "candidate_name": "Candidate_003",
+  "session_id": "session_003",
+  "level": "entry",
+  "started_at": "2025-09-14T10:00:00Z",
+  "qa": [
+    {
+      "question": "Explain how you would use Excel to compare sales performance across regions.",
+      "answer": "I would use a PivotTable to summarize sales by region, and use bar charts to visualize the comparison.",
+      "eval": {
+        "score_accuracy": 10,
+        "score_efficiency": 9,
+        "score_clarity": 9,
+        "score_creativity": 8,
+        "feedback": "Excellent use of PivotTables and charts.",
+        "suggestions": ["Try using slicers for interactive filtering."],
+        "follow_ups": []
+      }
+    }
+  ],
+  "scores": {"accuracy": 10, "efficiency": 9, "clarity": 9, "creativity": 8},
+  "transcript": [
+    {
+      "question": "Explain how you would use Excel to compare sales performance across regions.",
+      "answer": "I would use a PivotTable to summarize sales by region, and use bar charts to visualize the comparison.",
+      "eval": {
+        "score_accuracy": 10,
+        "score_efficiency": 9,
+        "score_clarity": 9,
+        "score_creativity": 8,
+        "feedback": "Excellent use of PivotTables and charts.",
+        "suggestions": ["Try using slicers for interactive filtering."],
+        "follow_ups": []
+      },
+      "timestamp": "2025-09-14T10:01:00Z"
+    }
+  ],
+  "agent_judgement": {"confidence": 0.93, "communication": "Very clear and insightful.", "adaptability": "N/A"}
+}

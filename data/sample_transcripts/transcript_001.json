@@ -1,0 +1,39 @@
+{
+  "candidate_name": "Candidate_001",
+  "session_id": "session_001",
+  "level": "entry",
+  "started_at": "2025-09-14T09:00:00Z",
+  "qa": [
+    {
+      "question": "Describe how you would use Excel to track monthly expenses and visualize spending trends.",
+      "answer": "I would create a table with categories and months, use SUMIFS to total expenses, and insert a line chart to visualize trends.",
+      "eval": {
+        "score_accuracy": 8,
+        "score_efficiency": 7,
+        "score_clarity": 9,
+        "score_creativity": 7,
+        "feedback": "Good use of SUMIFS and charts. Could mention PivotTables for more flexibility.",
+        "suggestions": ["Explore PivotTables for dynamic analysis."],
+        "follow_ups": []
+      }
+    }
+  ],
+  "scores": {"accuracy": 8, "efficiency": 7, "clarity": 9, "creativity": 7},
+  "transcript": [
+    {
+      "question": "Describe how you would use Excel to track monthly expenses and visualize spending trends.",
+      "answer": "I would create a table with categories and months, use SUMIFS to total expenses, and insert a line chart to visualize trends.",
+      "eval": {
+        "score_accuracy": 8,
+        "score_efficiency": 7,
+        "score_clarity": 9,
+        "score_creativity": 7,
+        "feedback": "Good use of SUMIFS and charts. Could mention PivotTables for more flexibility.",
+        "suggestions": ["Explore PivotTables for dynamic analysis."],
+        "follow_ups": []
+      },
+      "timestamp": "2025-09-14T09:01:00Z"
+    }
+  ],
+  "agent_judgement": {"confidence": 0.85, "communication": "Clear and organized.", "adaptability": "N/A"}
+}
