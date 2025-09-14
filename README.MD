@@ -55,7 +55,7 @@ Backend (FastAPI, Python)
 
 ## 5. High-Level System Architecture
 
-![Excel Interviewer System Flowchart](docs/flowchart_11.png)
+![Excel Interviewer System Flowchart](docs/flowchart11.png)
 
 ```
 Frontend (Next.js + Tailwind + Handsontable.js)
