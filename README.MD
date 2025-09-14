@@ -53,19 +53,23 @@ Backend (FastAPI, Python)
 	python -c "from src.utils.db import init_db; init_db()"
 	```
 
-## Usage
+## 5. High-Level System Architecture
 
-1. **Run the backend (example):**
-	- Integrate with FastAPI or Flask for API endpoints.
-	- Use `Session` and interview flow functions to orchestrate interviews.
-2. **Answer Evaluation:**
-	- Answers are checked for formula syntax and scored by LLM for correctness and clarity.
-3. **Reporting:**
-	- After the interview, generate a PDF report using `report_gen.py`.
+![Excel Interviewer System Flowchart](docs/flowchart_11.png)
 
-## Extending the System
-
-- **Add More Questions:** Edit `src/interview/questions.py`.
+```
+Frontend (Next.js + Tailwind + Handsontable.js)
+	|
+Backend (FastAPI, Python)
+	|-- Interview Orchestration (src/interview/_flow.py)
+	|-- State Management (src/interview/state.py, src/models/session.py)
+	|-- Question Bank (src/interview/questions.py)
+	|-- Evaluation Layer (src/evaluation/regex_rules.py, scoring.py, semantic_eval.py)
+	|-- Reporting (src/reporting/report_gen.py)
+	|-- Persistence (src/utils/db.py)
+	|-- Analytics (src/services/analytics.py)
+	|-- Config & Security (src/config/settings.py)
+```
 - **Improve Formula Parsing:** Integrate ANTLR or DuckDB for advanced validation.
 - **Frontend:** Build a chat interface and Excel-like grid using Next.js and Handsontable.js.
 - **Cloud Deployment:** Containerize and deploy on AWS/GCP for scalability.
