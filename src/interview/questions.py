@@ -7,7 +7,6 @@
 import json
 import os
 
-DB_PATH = os.path.join(os.path.dirname(__file__), '../../data/questions_db.json')
 
 def load_questions_db():
     with open(DB_PATH, 'r', encoding='utf-8') as f:
